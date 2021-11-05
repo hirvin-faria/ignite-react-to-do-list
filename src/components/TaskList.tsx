@@ -30,6 +30,7 @@ export function TaskList() {
       };
   
       // trata atrasos na atualizacao do state utilizando-se uma funcao callback
+      // recebe o state antigo e o dado a ser adicionado ao state
       setTasks(oldState => [...oldState, newTask]);
       setNewTaskTitle('');
     }
